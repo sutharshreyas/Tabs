@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <button id="firsttab" class="btn active">first tab</button>
+        <button id="secondtab" class="btn">second tab</button>
+        <button id="thirdtab" class="btn">third tab</button>
+        <button id="fourthtab" class="btn">fourth tab</button>
+    </div>
+
+    <div class="firsttabinf">
+            <p id="demo">first tab content to displayed here.</p>
+    </div>
+<!-- <div id="para">
+    <p id="first">first tab content to displayed here.</p>
+    <p id="second">second tab content to displayed here.</p>
+    <p id="third">third tab content to displayed here.</p>
+    <p id="fourth">fourth tab content to displayed here.</p>
+</div> -->
+    
+    <script>
+
+        const btn1 = document.getElementById("firsttab");
+
+        const first = document.getElementById("first");
+
+        btn1.addEventListener("click", () => {
+            demo.textContent = "first tab content to displayed here.";
+        });
+        
+        const btn2 = document.getElementById("secondtab");
+
+        const second = document.getElementById("second");
+
+        btn2.addEventListener("click", () => {
+            demo.textContent = "second tab content to displayed here.";
+        });
+
+        const btn3 = document.getElementById("thirdtab");
+
+        const third = document.getElementById("third");
+
+        btn3.addEventListener("click", () => {
+            demo.textContent = "third tab content to displayed here.";
+        });
+
+        const btn4 = document.getElementById("fourthtab");
+
+        const fourth = document.getElementById("fourth");
+
+        btn4.addEventListener("click", () => {
+            demo.textContent = "fourth tab content to displayed here.";
+        });
+
+
+        const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Remove 'active' class from all buttons
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // Add 'active' class to the clicked button
+    button.classList.add("active");
+  });
+});
+
+    </script>
+</body>
+
+
+
+</html>

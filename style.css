@@ -1,0 +1,55 @@
+.navbar{
+    height: 70px;
+    width: auto;
+    /* border: 2px solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: larger;
+    text-transform: capitalize;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+a{
+    margin: 20px;
+    margin-left: auto;
+    text-decoration: none;
+}
+.firsttabinf{
+    margin: 10px;
+    height: 120px;
+    width: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    text-transform: capitalize;
+}
+button{
+    height: 40px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: large;
+    opacity: 0.5;
+    /* display: flex; */
+}
+button:hover{
+    background-color: black;
+    color: red;
+    border-bottom: 2px solid;
+    opacity:1;
+}
+button.active{
+    opacity:1;
+    border-bottom: 5px solid;
+}
